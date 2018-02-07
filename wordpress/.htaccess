@@ -1,0 +1,12 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /simplon-projet/mon-code/php/00_worldpress/wordpress/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /simplon-projet/mon-code/php/00_worldpress/wordpress/index.php [L]
+</IfModule>
+
+# END WordPress
